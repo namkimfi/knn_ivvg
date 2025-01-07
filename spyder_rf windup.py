@@ -105,8 +105,8 @@ def main():
     instrument = open_resource(E4432B_address) #rf source
     
 
-    start_voltage5, step_size5, delay5 = 0.0, 0.1, 0.2  #Prf
-    start_voltage6, step_size6, delay6 = 1e9, 1e4, 0.2  #freq
+    start_voltage5, step_size5, delay5 = -100, 0.5, 0.2  #Prf
+    start_voltage6, step_size6, delay6 = 1e8, 1e6, 0.2  #freq
 
 
     windup_Prf(instrument, start_voltage5, step_size5, delay5) #Prf
